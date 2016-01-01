@@ -3,6 +3,7 @@
 $green: #50a366
 $white: #ffffff
 $black: #1b1c20
+$blackgrey: #232527
 $darkgrey: #373a3d
 $lightgrey: #acacac
 $textgrey: #ccced0
@@ -71,9 +72,17 @@ section#features
   .title
     border-bottom: 2px solid $darkgrey
 
-section#reviews,
-footer
+section#reviews
   background-color: $black
   color: $lightgrey
+
   .title
-    border-bottom: 2px solid $lightgrey
+    border-bottom: 2px solid $darkgrey
+
+  .review
+    border-bottom: 2px solid $darkgrey
+    &:last-child
+      border-bottom: none
+footer
+  background-color: $blackgrey
+  color: $lightgrey

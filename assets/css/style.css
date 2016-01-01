@@ -682,10 +682,16 @@ section#features {
   section#features .title {
     border-bottom: 2px solid #373a3d; }
 
-section#reviews,
-footer {
+section#reviews {
   background-color: #1b1c20;
   color: #acacac; }
-  section#reviews .title,
-  footer .title {
-    border-bottom: 2px solid #acacac; }
+  section#reviews .title {
+    border-bottom: 2px solid #373a3d; }
+  section#reviews .review {
+    border-bottom: 2px solid #373a3d; }
+    section#reviews .review:last-child {
+      border-bottom: none; }
+
+footer {
+  background-color: #232527;
+  color: #acacac; }
