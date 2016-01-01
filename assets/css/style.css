@@ -630,7 +630,7 @@ img {
   width: 100%; }
 
 .row {
-  max-width: 800px;
+  max-width: 900px;
   padding-left: 20px;
   padding-right: 20px;
   margin: 0 auto; }
@@ -675,7 +675,7 @@ footer h1 {
 
 footer nav ul {
   text-align: right;
-  margin-top: 52px; }
+  padding-top: 15px; }
   footer nav ul li {
     list-style: none;
     display: inline-block;
