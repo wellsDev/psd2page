@@ -636,7 +636,6 @@ img {
   margin: 0 auto; }
 
 header {
-  height: 100px;
   padding-top: 20px;
   padding-bottom: 20px; }
   header h1 {
@@ -670,6 +669,23 @@ section#rotator .section1 {
       background-color: #ffffff;
       color: #373a3d;
       border: none; }
+
+footer h1 {
+  font-size: 1.75rem; }
+
+footer nav ul {
+  text-align: right;
+  margin-top: 52px; }
+  footer nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 20px; }
+    footer nav ul li:nth-of-type(1) {
+      margin-left: 0px; }
+    footer nav ul li a {
+      text-decoration: none;
+      color: #ffffff;
+      font-size: .6rem; }
 
 header,
 section#rotator {
