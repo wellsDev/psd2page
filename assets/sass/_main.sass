@@ -1,1 +1,48 @@
 //main: style.sass
+//Color Variables
+$green: #50a366
+$white: #ffffff
+$black: #1b1c20
+$darkgrey: #373a3d
+$lightgrey: #acacac
+$textgrey: #ccced0
+
+.container
+  width: 100%
+
+.row
+  max-width: 900px
+  margin: 0 auto
+
+header
+  height: 100px
+  left: 0px
+  right: 0px
+  nav
+    li
+      list-style: none
+      display: inline-block
+      a
+        text-decoration: none
+
+section
+  height: 700px
+
+//Colors
+header,
+section#rotator
+  background-color: $green
+  color: $white
+
+section#features
+  background-color: $white
+  color: $darkgrey
+  .title
+    border-bottom: 2px solid $darkgrey
+
+section#reviews,
+footer
+  background-color: $black
+  color: $lightgrey
+  .title
+    border-bottom: 2px solid $lightgrey
