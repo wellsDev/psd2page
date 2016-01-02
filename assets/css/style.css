@@ -632,7 +632,7 @@ img {
 .row {
   max-width: 900px;
   padding-left: 20px;
-  padding-right: 20px;
+  padding-right: 40px;
   margin: 0 auto; }
 
 header {
@@ -659,7 +659,7 @@ section {
   padding-bottom: 20px; }
 
 section#rotator .section1 {
-  padding-top: 5%; }
+  padding-top: 2%; }
   section#rotator .section1 .detail {
     margin-right: 40px;
     text-align: justify; }
