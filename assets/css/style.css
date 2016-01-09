@@ -626,6 +626,9 @@ th {
 .col--am {
   vertical-align: middle; }
 
+body {
+  font-family: 'Lato', sans-serif; }
+
 img {
   width: 100%; }
 
@@ -658,17 +661,15 @@ section {
   padding-top: 20px;
   padding-bottom: 20px; }
 
-section#rotator .section1 {
-  padding-top: 2%; }
-  section#rotator .section1 .detail {
-    margin-right: 40px;
-    text-align: justify; }
-    section#rotator .section1 .detail button {
-      padding: 10px;
-      border-radius: 5px;
-      background-color: #ffffff;
-      color: #373a3d;
-      border: none; }
+section#rotator .detail {
+  margin-right: 40px;
+  text-align: justify; }
+  section#rotator .detail button {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #373a3d;
+    border: none; }
 
 section#features .feature {
   text-align: center;
