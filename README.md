@@ -17,6 +17,12 @@ Install npm packages
 ```sh
 npm install
 ```
+Install Browser Sync
+
+```sh
+npm install -g browser-sync
+npm install browser-sync --save-dev
+```
 
 Compile Sass
 
