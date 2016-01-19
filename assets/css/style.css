@@ -639,7 +639,12 @@ img {
   margin: 0 auto; }
 
 header {
+<<<<<<< HEAD
   padding-top: 20px; }
+=======
+  padding-top: 20px;
+  margin: 0px; }
+>>>>>>> 9753ba2353db214aece5dca514a5d1b0dc3db98a
   header h1 {
     font-size: 2.75rem;
     margin-bottom: 0px; }
@@ -662,6 +667,7 @@ header {
 section {
   padding-bottom: 20px; }
 
+<<<<<<< HEAD
 section#rotator {
   padding-top: 70px; }
   section#rotator .detail {
@@ -679,10 +685,34 @@ section#rotator {
       background-color: #ffffff;
       color: #373a3d;
       border: none; }
+=======
+section#rotator .detail {
+  margin-right: 80px;
+  text-align: justify; }
+  section#rotator .detail .subtitle {
+    color: #BDDCC6; }
+  section#rotator .detail p.detailText {
+    margin-bottom: 40px; }
+  section#rotator .detail button {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #373a3d;
+    border: none; }
+>>>>>>> 9753ba2353db214aece5dca514a5d1b0dc3db98a
+
+.green {
+  color: #50a366; }
 
 section#features .feature {
   text-align: center;
   padding: 10px; }
+
+section#features .title {
+  text-align: center;
+  font-weight: 300;
+  padding-bottom: 20px;
+  margin-bottom: 30px; }
 
 footer h1 {
   font-size: 1.75rem; }
@@ -705,18 +735,37 @@ header,
 section#rotator {
   background-color: #50a366;
   color: #ffffff; }
+  header .detail .subtitle,
+  section#rotator .detail .subtitle {
+    color: #BDDCC6; }
+
+section#rotator .detail {
+  margin-right: 80px;
+  text-align: justify; }
+  section#rotator .detail .subtitle {
+    color: #BDDCC6; }
 
 section#features {
   background-color: #ffffff;
   color: #373a3d; }
   section#features .title {
-    border-bottom: 2px solid #373a3d; }
+    border-bottom: 2px solid #CECFD0; }
+  section#features .feature > i {
+    color: #acacac;
+    font-weight: 100; }
 
 section#reviews {
   background-color: #1b1c20;
   color: #acacac; }
   section#reviews .title {
-    border-bottom: 2px solid #373a3d; }
+    border-bottom: 2px solid #373a3d;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    margin-top: 10px; }
+  section#reviews h2 {
+    color: #ffffff; }
+  section#reviews h3 {
+    text-align: center; }
   section#reviews .review {
     border-bottom: 2px solid #373a3d; }
     section#reviews .review:last-child {

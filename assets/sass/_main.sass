@@ -7,6 +7,7 @@ $blackgrey: #232527
 $darkgrey: #373a3d
 $lightgrey: #acacac
 $textgrey: #ccced0
+$lightgreen: #BDDCC6
 
 img
   width: 100%
@@ -23,6 +24,10 @@ img
 //Header /  Nav
 header
   padding-top: 20px
+<<<<<<< HEAD
+=======
+  margin: 0px
+>>>>>>> 9753ba2353db214aece5dca514a5d1b0dc3db98a
   h1
     font-size: 2.75rem
     margin-bottom: 0px
@@ -50,14 +55,21 @@ section
 section#rotator
   padding-top: 70px
   .detail
-    margin-right: 40px
+    margin-right: 80px
     text-align: justify
+<<<<<<< HEAD
     h2
       font-size: 32px
     p.subtitle
       font-size: 20px
     p
       font-size: 1rem
+=======
+    .subtitle
+      color: $lightgreen
+    p.detailText
+      margin-bottom: 40px
+>>>>>>> 9753ba2353db214aece5dca514a5d1b0dc3db98a
     button
       padding: 10px
       border-radius: 5px
@@ -65,10 +77,18 @@ section#rotator
       color: $darkgrey
       border: none
 
+.green
+  color: $green
+
 section#features
   .feature
     text-align: center
     padding: 10px
+  .title
+    text-align: center
+    font-weight: 300
+    padding-bottom: 20px
+    margin-bottom: 30px
 
 footer
   h1
@@ -93,12 +113,25 @@ header,
 section#rotator
   background-color: $green
   color: $white
+  .detail .subtitle
+    color: $lightgreen
+
+section#rotator
+  .detail
+    margin-right: 80px
+    text-align: justify
+    .subtitle
+      color: #BDDCC6
 
 section#features
   background-color: $white
   color: $darkgrey
   .title
-    border-bottom: 2px solid $darkgrey
+    border-bottom: 2px solid #CECFD0
+  .feature > i
+    color: $lightgrey
+    font-weight: 100
+
 
 section#reviews
   background-color: $black
@@ -106,11 +139,21 @@ section#reviews
 
   .title
     border-bottom: 2px solid $darkgrey
+    margin-bottom: 20px
+    padding-bottom: 20px
+    margin-top: 10px
+
+  h2
+    color: $white
+
+  h3
+    text-align: center
 
   .review
     border-bottom: 2px solid $darkgrey
     &:last-child
       border-bottom: none
+
 footer
   background-color: $blackgrey
   color: $lightgrey
