@@ -639,13 +639,15 @@ img {
   margin: 0 auto; }
 
 header {
-  padding-top: 20px;
-  padding-bottom: 20px; }
+  padding-top: 20px; }
   header h1 {
-    font-size: 2.75rem; }
+    font-size: 2.75rem;
+    margin-bottom: 0px; }
   header nav ul {
     text-align: right;
-    margin-top: 52px; }
+    margin-top: 52px;
+    margin-bottom: 0px;
+    font-weight: 300; }
     header nav ul li {
       list-style: none;
       display: inline-block;
@@ -658,18 +660,25 @@ header {
         font-size: 1.375rem; }
 
 section {
-  padding-top: 20px;
   padding-bottom: 20px; }
 
-section#rotator .detail {
-  margin-right: 40px;
-  text-align: justify; }
-  section#rotator .detail button {
-    padding: 10px;
-    border-radius: 5px;
-    background-color: #ffffff;
-    color: #373a3d;
-    border: none; }
+section#rotator {
+  padding-top: 70px; }
+  section#rotator .detail {
+    margin-right: 40px;
+    text-align: justify; }
+    section#rotator .detail h2 {
+      font-size: 32px; }
+    section#rotator .detail p.subtitle {
+      font-size: 20px; }
+    section#rotator .detail p {
+      font-size: 1rem; }
+    section#rotator .detail button {
+      padding: 10px;
+      border-radius: 5px;
+      background-color: #ffffff;
+      color: #373a3d;
+      border: none; }
 
 section#features .feature {
   text-align: center;
