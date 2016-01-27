@@ -639,15 +639,12 @@ img {
   margin: 0 auto; }
 
 header {
-<<<<<<< HEAD
-  padding-top: 20px; }
-=======
   padding-top: 20px;
   margin: 0px; }
->>>>>>> 9753ba2353db214aece5dca514a5d1b0dc3db98a
   header h1 {
     font-size: 2.75rem;
-    margin-bottom: 0px; }
+    margin: 30px 0px 0px 0px;
+    padding: 0px; }
   header nav ul {
     text-align: right;
     margin-top: 52px;
@@ -667,11 +664,10 @@ header {
 section {
   padding-bottom: 20px; }
 
-<<<<<<< HEAD
 section#rotator {
   padding-top: 70px; }
   section#rotator .detail {
-    margin-right: 40px;
+    margin-right: 80px;
     text-align: justify; }
     section#rotator .detail h2 {
       font-size: 32px; }
@@ -679,27 +675,16 @@ section#rotator {
       font-size: 20px; }
     section#rotator .detail p {
       font-size: 1rem; }
+    section#rotator .detail .subtitle {
+      color: #BDDCC6; }
+    section#rotator .detail p.detailText {
+      margin-bottom: 40px; }
     section#rotator .detail button {
       padding: 10px;
       border-radius: 5px;
       background-color: #ffffff;
       color: #373a3d;
       border: none; }
-=======
-section#rotator .detail {
-  margin-right: 80px;
-  text-align: justify; }
-  section#rotator .detail .subtitle {
-    color: #BDDCC6; }
-  section#rotator .detail p.detailText {
-    margin-bottom: 40px; }
-  section#rotator .detail button {
-    padding: 10px;
-    border-radius: 5px;
-    background-color: #ffffff;
-    color: #373a3d;
-    border: none; }
->>>>>>> 9753ba2353db214aece5dca514a5d1b0dc3db98a
 
 .green {
   color: #50a366; }
@@ -715,7 +700,9 @@ section#features .title {
   margin-bottom: 30px; }
 
 footer h1 {
-  font-size: 1.75rem; }
+  font-size: 1.75rem;
+  margin: 0px;
+  padding: 0px; }
 
 footer nav ul {
   text-align: right;
@@ -761,7 +748,7 @@ section#reviews {
     border-bottom: 2px solid #373a3d;
     margin-bottom: 20px;
     padding-bottom: 20px;
-    margin-top: 10px; }
+    padding-top: 30px; }
   section#reviews h2 {
     color: #ffffff; }
   section#reviews h3 {
