@@ -1,7 +1,7 @@
 //main: style.sass
-//Color Variables
+/* - - - - - - - - - Variables - - - - - - - - - */
 $green: #50a366
-$white: #ffffff
+$white: #FFFFFF
 $black: #1b1c20
 $blackgrey: #232527
 $darkgrey: #373a3d
@@ -9,10 +9,26 @@ $lightgrey: #acacac
 $textgrey: #ccced0
 $lightgreen: #BDDCC6
 
+/* - - - - - - - - - Global Styles - - - - - - - - - */
+*
+  box-sizing: border-box
+
+body
+  margin: 0
+
 img
   width: 100%
 
-.container
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+  margin: 0
+
+a
+  text-decoration: none
 
 //+20px padding to counter the gutter for each first column
 .row
@@ -21,19 +37,37 @@ img
   padding-right: 40px
   margin: 0 auto
 
-//Header /  Nav
+section
+  padding-bottom: 20px
+
+.button
+  padding: 10px
+  border-radius: 2rem
+  color: $darkgrey
+  border: none
+  outline: none
+  transition: background .1s ease-in
+
+.button-highlight
+  background-color: $white
+  &:hover
+    background-color: $darkgrey
+    color: $white
+    cursor: pointer
+
+
+/* - - - - - - - - - Header Styles - - - - - - - - - */
 header
-  padding-top: 20px
+  padding-top: 40px
   margin: 0px
+  background-color: $green
+  color: $white
   h1
     font-size: 2.75rem
-    margin: 30px 0px 0px 0px
     padding: 0px
-
   nav
     ul
       text-align: right
-      margin-top: 52px
       margin-bottom: 0px
       font-weight: 300
       li
@@ -43,63 +77,90 @@ header
         &:nth-of-type(1)
           margin-left: 0px
         a
-          text-decoration: none
           color: $white
           font-size: 1.375rem
+          &:hover
+            color: $darkgrey
 
-section
-  padding-bottom: 20px
-
-//Rotator
+/* - - - - - - - - - Rotator Styles - - - - - - - - - */
 section#rotator
+  background-color: $green
+  color: $white
   padding-top: 70px
   .detail
     margin-right: 80px
     text-align: justify
-
+    padding-top: 40px
+    .subtitle
+      color: $lightgreen
     h2
       font-size: 32px
     p.subtitle
       font-size: 20px
     p
       font-size: 1rem
-
     .subtitle
       color: $lightgreen
-
     p.detailText
       margin-bottom: 40px
 
-    button
-      padding: 10px
-      border-radius: 5px
-      background-color: $white
-      color: $darkgrey
-      border: none
-
-.green
-  color: $green
-
+/* - - - - - - - - - Features Styles - - - - - - - - - */
 section#features
+  background-color: $white
+  color: $darkgrey
+  padding-top: 30px
   .feature
     text-align: center
     padding: 10px
+    h4
+      font-size: 1.2rem
+    p
+      font-size: .95rem
+    i
+      color: $lightgrey
   .title
     text-align: center
     font-weight: 300
     padding-bottom: 20px
     margin-bottom: 30px
+    border-bottom: 2px solid #CECFD0
+    h2
+      span
+        color: $green
 
+/* - - - - - - - - - Review Styles - - - - - - - - - */
+section#reviews
+  background-color: $black
+  color: $lightgrey
+  padding-top: 30px
+  .title
+    border-bottom: 2px solid $darkgrey
+    margin-bottom: 20px
+    padding-bottom: 20px
+  h2
+    color: $white
+  h3
+    text-align: center
+  .review
+    border-bottom: 2px solid $darkgrey
+    &:last-child
+      border-bottom: none
+    .reviewText
+      font-size: .85rem
+    .whoReviewed
+      font-size: .95rem
+      font-weight: bold
+
+/* - - - - - - - - - Footer Styles - - - - - - - - - */
 footer
-  h1
+  background-color: $blackgrey
+  color: $lightgrey
+  h1.logo
     font-size: 1.75rem
-    margin: 0px
-    padding: 0px
-
+    padding-top: 8px
   nav
     ul
       text-align: right
-      padding-top: 15px
       li
         list-style: none
         display: inline-block
@@ -107,55 +168,5 @@ footer
         &:nth-of-type(1)
           margin-left: 0px
         a
-          text-decoration: none
           color: $white
           font-size: .6rem
-
-//Colors
-header,
-section#rotator
-  background-color: $green
-  color: $white
-  .detail .subtitle
-    color: $lightgreen
-
-section#rotator
-  .detail
-    margin-right: 80px
-    text-align: justify
-    .subtitle
-      color: #BDDCC6
-
-section#features
-  background-color: $white
-  color: $darkgrey
-  .title
-    border-bottom: 2px solid #CECFD0
-  .feature > i
-    color: $lightgrey
-    font-weight: 100
-
-
-section#reviews
-  background-color: $black
-  color: $lightgrey
-  .title
-    border-bottom: 2px solid $darkgrey
-    margin-bottom: 20px
-    padding-bottom: 20px
-    padding-top: 30px
-
-  h2
-    color: $white
-
-  h3
-    text-align: center
-
-  .review
-    border-bottom: 2px solid $darkgrey
-    &:last-child
-      border-bottom: none
-
-footer
-  background-color: $blackgrey
-  color: $lightgrey
