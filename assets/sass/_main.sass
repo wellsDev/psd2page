@@ -8,6 +8,8 @@ $darkgrey: #373a3d
 $lightgrey: #acacac
 $textgrey: #ccced0
 $lightgreen: #BDDCC6
+$medium: 760px
+$small: 480px
 
 /* - - - - - - - - - Global Styles - - - - - - - - - */
 *
@@ -15,6 +17,11 @@ $lightgreen: #BDDCC6
 
 body
   margin: 0
+
+.row
+  padding: 0 40px 0 20px
+  max-width: 960px
+  margin: 0 auto
 
 img
   width: 100%
@@ -29,13 +36,6 @@ h6
 
 a
   text-decoration: none
-
-//+20px padding to counter the gutter for each first column
-.row
-  max-width: 900px
-  padding-left: 20px
-  padding-right: 40px
-  margin: 0 auto
 
 section
   padding-bottom: 20px
@@ -59,13 +59,16 @@ section
 /* - - - - - - - - - Header Styles - - - - - - - - - */
 header
   padding-top: 40px
+  padding-bottom: 40px
   margin: 0px
   background-color: $green
   color: $white
-  h1
+  h1.logo
     font-size: 2.75rem
     padding: 0px
+    float: left
   nav
+    float: right
     ul
       text-align: right
       margin-bottom: 0px
@@ -90,7 +93,7 @@ section#rotator
   .detail
     margin-right: 80px
     text-align: justify
-    padding-top: 40px
+    padding-top: 20px
     .subtitle
       color: $lightgreen
     h2
@@ -102,7 +105,7 @@ section#rotator
     .subtitle
       color: $lightgreen
     p.detailText
-      margin-bottom: 40px
+      margin-bottom: 20px
 
 /* - - - - - - - - - Features Styles - - - - - - - - - */
 section#features
@@ -155,10 +158,13 @@ section#reviews
 footer
   background-color: $blackgrey
   color: $lightgrey
+  height: 60px
   h1.logo
     font-size: 1.75rem
     padding-top: 8px
+    float: left
   nav
+    float: right
     ul
       text-align: right
       li
@@ -170,3 +176,5 @@ footer
         a
           color: $white
           font-size: .6rem
+          &:hover
+            color: $darkgrey
