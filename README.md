@@ -24,6 +24,11 @@ npm install -g browser-sync
 npm install browser-sync --save-dev
 ```
 
+Run GULP for SASS compile, SASS watch and Browser Sync
+```sh
+gulp
+```
+
 Compile Sass
 
 ```sh
