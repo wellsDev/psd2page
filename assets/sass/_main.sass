@@ -82,6 +82,16 @@ header
           &:hover
             color: $darkgrey
 
+@media(max-width: 520px)
+  header nav ul
+    text-align: center
+    padding: 0px
+    li a
+      font-size: 1.1rem
+
+  header
+    text-align: center
+
 /* - - - - - - - - - Rotator Styles - - - - - - - - - */
 section#rotator
   background-color: $green
@@ -103,6 +113,13 @@ section#rotator
       color: $lightgreen
     p.detailText
       margin-bottom: 40px
+
+@media (max-width: 520px)
+  section#rotator
+    padding-top: 20px
+    .detail
+      margin: 0 auto
+      padding-bottom: 40px
 
 /* - - - - - - - - - Features Styles - - - - - - - - - */
 section#features
@@ -161,10 +178,11 @@ footer
   nav
     ul
       text-align: right
+      margin: 0px 0px
       li
         list-style: none
         display: inline-block
-        margin-left: 20px
+        margin-left: 10px
         &:nth-of-type(1)
           margin-left: 0px
         a

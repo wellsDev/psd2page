@@ -385,6 +385,15 @@ header {
         header nav ul li a:hover {
           color: #373a3d; }
 
+@media (max-width: 520px) {
+  header nav ul {
+    text-align: center;
+    padding: 0px; }
+    header nav ul li a {
+      font-size: 1.1rem; }
+  header {
+    text-align: center; } }
+
 /* - - - - - - - - - Rotator Styles - - - - - - - - - */
 section#rotator {
   background-color: #50a366;
@@ -406,6 +415,13 @@ section#rotator {
       color: #BDDCC6; }
     section#rotator .detail p.detailText {
       margin-bottom: 40px; }
+
+@media (max-width: 520px) {
+  section#rotator {
+    padding-top: 20px; }
+    section#rotator .detail {
+      margin: 0 auto;
+      padding-bottom: 40px; } }
 
 /* - - - - - - - - - Features Styles - - - - - - - - - */
 section#features {
@@ -461,11 +477,12 @@ footer {
     font-size: 1.75rem;
     padding-top: 8px; }
   footer nav ul {
-    text-align: right; }
+    text-align: right;
+    margin: 0px 0px; }
     footer nav ul li {
       list-style: none;
       display: inline-block;
-      margin-left: 20px; }
+      margin-left: 10px; }
       footer nav ul li:nth-of-type(1) {
         margin-left: 0px; }
       footer nav ul li a {
